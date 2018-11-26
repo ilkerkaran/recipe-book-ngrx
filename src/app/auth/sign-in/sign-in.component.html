@@ -1,0 +1,25 @@
+<form (ngSubmit)="onSubmit(refForm)" #refForm="ngForm">
+  <div class="container">
+    <div class="row col-xs-12 colsm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <h1>Sign-In</h1>
+      <div>
+        <p style ="font-weight: bold">You can register with a predefined user: user1 with the password: 123</p>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="password"
+          />
+        </div>
+        <button class="btn btn-primary" type="submit">Sign In</button>
+      </div>
+    </div>
+  </div>
+</form>
