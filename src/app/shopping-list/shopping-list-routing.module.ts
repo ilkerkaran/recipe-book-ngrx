@@ -7,7 +7,7 @@ import { AuthGuard } from '../auth/auth.guard';
 
 const shoppingListRoute: Routes = [
   {
-    path: '',
+    path: 'shopping-list',
     component: ShoppingListComponent,
     children: [{ path: ':id/edit', component: ShoppingEditComponent }]
   }

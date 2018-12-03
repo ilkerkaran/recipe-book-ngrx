@@ -9,6 +9,7 @@ import { NgModule } from '@angular/core';
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './core/home/home.component';
 import { AppCustomPreloader } from './shared/custom-preloader';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 const appRoutes: Routes = [
   {
@@ -22,8 +23,8 @@ const appRoutes: Routes = [
   },
   {
     path: 'shopping-list',
-    loadChildren: './shopping-list/shopping-list.module#ShoppingListModule',
-    data: { preload: true }
+    component: ShoppingListComponent
+    // loadChildren: './shopping-list/shopping-list.module#ShoppingListModule'
   },
   {
     path: 'auth',
