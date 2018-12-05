@@ -5,9 +5,8 @@ import { Store } from '@ngrx/store';
 import { Recipe } from '../recipe.model';
 import { ShoppingListService } from '../../shopping-list/shopping-list.service';
 import { RecipeService } from '../recipe.service';
-import { Ingredient } from 'src/app/shared/ingredient.model';
 import * as ShoppinListActions from '../../shopping-list/store/shoppimg-list.actions';
-import { State, AppState } from 'src/app/shopping-list/store/shopping-list.reducers';
+import { AppState } from 'src/app/store/app.reducers';
 
 @Component({
   selector: 'app-recipe-detail',

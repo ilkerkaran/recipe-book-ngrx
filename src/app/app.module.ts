@@ -9,7 +9,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
-import { shoppingListReducer } from './shopping-list/store/shopping-list.reducers';
+import { reducers } from './store/app.reducers';
+
 @NgModule({
   declarations: [AppComponent],
   // Order in impport ensures that the Catch-all/ wildcard routes work correctly.
@@ -21,7 +22,7 @@ import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer
     HttpClientModule,
     SharedModule,
     CoreModule,
-    StoreModule.forRoot({ shoppingList: shoppingListReducer })
+    StoreModule.forRoot(reducers)
   ],
   bootstrap: [AppComponent]
 })
